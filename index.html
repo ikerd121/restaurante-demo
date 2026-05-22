@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Terraza — Restaurante</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">La Terraza</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+        <li><a href="#reservas" class="btn-nav">Reservar mesa</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Desde 1998 · Madrid</span>
+      <h1>Sabor auténtico,<br/>momentos únicos</h1>
+      <p>Cocina mediterránea de temporada en el corazón de la ciudad.<br/>Ingredientes locales, recetas con alma.</p>
+      <div class="hero-btns">
+        <a href="#reservas" class="btn-primary">Reservar mesa</a>
+        <a href="#menu" class="btn-secondary">Ver menú</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Desliza</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="strip-item">
+      <span class="strip-icon">🌿</span>
+      <div>
+        <strong>Km 0</strong>
+        <p>Productos locales y de temporada</p>
+      </div>
+    </div>
+    <div class="strip-item">
+      <span class="strip-icon">🍷</span>
+      <div>
+        <strong>Bodega propia</strong>
+        <p>Más de 80 referencias</p>
+      </div>
+    </div>
+    <div class="strip-item">
+      <span class="strip-icon">👨‍🍳</span>
+      <div>
+        <strong>Chef premiado</strong>
+        <p>2 soles Repsol 2024</p>
+      </div>
+    </div>
+    <div class="strip-item">
+      <span class="strip-icon">🌅</span>
+      <div>
+        <strong>Terraza</strong>
+        <p>Vistas al parque del Retiro</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra carta</span>
+        <h2>Menú de temporada</h2>
+        <p>Todos nuestros platos cambian con las estaciones para ofrecerte siempre lo mejor del mercado.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="entrantes">Entrantes</button>
+        <button class="tab-btn" data-tab="principales">Principales</button>
+        <button class="tab-btn" data-tab="postres">Postres</button>
+        <button class="tab-btn" data-tab="bebidas">Bebidas</button>
+      </div>
+
+      <div class="menu-grid" id="menu-content"></div>
+
+      <div class="menu-note">
+        <p>* Consulta con nuestros camareros sobre alérgenos y opciones vegetarianas. Precios con IVA incluido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galería</span>
+        <h2>Una experiencia visual</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80')">
+          <div class="gallery-overlay"><span>Sala principal</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80')">
+          <div class="gallery-overlay"><span>Nuestros platos</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80')">
+          <div class="gallery-overlay"><span>La barra</span></div>
+        </div>
+        <div class="gallery-item wide" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80')">
+          <div class="gallery-overlay"><span>Terraza exterior</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&q=80')">
+          <div class="gallery-overlay"><span>Cocina en vivo</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80')">
+          <div class="gallery-overlay"><span>Nuestra bodega</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section class="horarios" id="horarios">
+    <div class="container horarios-grid">
+      <div class="horarios-text">
+        <span class="section-tag">Cuándo visitarnos</span>
+        <h2>Horarios</h2>
+        <p>Abrimos todos los días del año excepto el 25 de diciembre y el 1 de enero. Te esperamos.</p>
+        <div class="horario-lista">
+          <div class="horario-row">
+            <span class="dias">Lunes – Jueves</span>
+            <span class="horas">13:00 – 16:00 · 20:00 – 23:30</span>
+          </div>
+          <div class="horario-row">
+            <span class="dias">Viernes – Sábado</span>
+            <span class="horas">13:00 – 16:30 · 20:00 – 00:30</span>
+          </div>
+          <div class="horario-row">
+            <span class="dias">Domingo</span>
+            <span class="horas">13:00 – 17:00</span>
+          </div>
+        </div>
+        <div class="contacto-info">
+          <p>📍 Calle Serrano 42, Madrid</p>
+          <p>📞 <a href="tel:+34910001122">+34 910 00 11 22</a></p>
+          <p>✉️ <a href="mailto:hola@laterraza.es">hola@laterraza.es</a></p>
+        </div>
+      </div>
+      <div class="horarios-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4!2d-3.6883!3d40.4168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjUiTiAzwrA0MSczOS44Ilc!5e0!3m2!1ses!2ses!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          title="Ubicación del restaurante">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="reservas" id="reservas">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">¿Nos visitas?</span>
+        <h2>Reserva tu mesa</h2>
+        <p>Asegura tu lugar con antelación. Confirmamos en menos de 2 horas.</p>
+      </div>
+      <form class="reserva-form" id="reserva-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ej. Ana García" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="tu@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+34 600 000 000" required />
+          </div>
+          <div class="form-group">
+            <label for="personas">Número de personas</label>
+            <select id="personas" required>
+              <option value="">Selecciona</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5-6">5 – 6 personas</option>
+              <option value="7+">Más de 7 (grupo)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" required />
+          </div>
+          <div class="form-group">
+            <label for="turno">Turno</label>
+            <select id="turno" required>
+              <option value="">Selecciona</option>
+              <option value="comida">Comida (13:00 – 16:00)</option>
+              <option value="cena">Cena (20:00 – 23:30)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="notas">Notas especiales (alergias, ocasiones, etc.)</label>
+          <textarea id="notas" rows="3" placeholder="Ej. Cumpleaños, intolerancia al gluten..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Solicitar reserva</button>
+      </form>
+      <div class="reserva-success" id="reserva-success" style="display:none">
+        <span>✓</span>
+        <h3>¡Reserva recibida!</h3>
+        <p>Te confirmaremos en menos de 2 horas por email y teléfono.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">La Terraza</span>
+        <p>Cocina mediterránea de temporada.<br/>Sabor auténtico desde 1998.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="TripAdvisor">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.9 5.9 0 0 0-.875 3.126 5.928 5.928 0 0 0 5.925 5.925 5.9 5.9 0 0 0 3.94-1.502L12 17.47l1.047-1.138a5.9 5.9 0 0 0 3.94 1.502 5.928 5.928 0 0 0 5.925-5.925 5.9 5.9 0 0 0-.875-3.126L24 6.648h-4.361c-2.307-1.57-4.976-2.353-7.633-2.353zM6.994 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm10.012 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm-10.012 1.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10.012 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Calle Serrano 42, Madrid</li>
+          <li><a href="tel:+34910001122">+34 910 00 11 22</a></li>
+          <li><a href="mailto:hola@laterraza.es">hola@laterraza.es</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 La Terraza · Todos los derechos reservados · <a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
+      <p class="demo-badge">Demo creada por <a href="#">ikerd121</a> — disponible para tu negocio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
